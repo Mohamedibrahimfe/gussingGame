@@ -1,40 +1,79 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-html{
-    background-color: #413838;
+
+html {
+    background: linear-gradient(to right, #FF7E5F, #FEB47B);
+    color: #333;
 }
-.container{
-    
-    margin: 60px;
+
+.container {
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
     justify-content: center;
     align-items: center;
+    max-width: 600px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-#submit{
-    padding: 20px;
-    background-color: yellow;
-    transition:1s ease-in-out; ;
+
+#input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #FF7E5F;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: border-color 0.3s;
 }
-#submit:hover{
-    background-color: rgb(81, 173, 5);
+
+#input:focus {
+    border-color: #FEB47B;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
 }
-.output{
-    padding: 20px;
-    background-color: green;
-    color: white;
-    font-size: 60px;
+
+#submit {
+    padding: 15px 30px;
+    background-color: #FF7E5F;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(255, 126, 95, 0.3);
+}
+
+#submit:hover {
+    background-color: #FEB47B;
+    transform: scale(1.1);
+}
+
+.output {
+    padding: 30px;
+    background-color: #4CAF50;
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
     height: 150px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-#input{
-    width: 300px;
-}
-.output{
-padding: 30px;
+
+.output p {
+    margin: 0;
 }
